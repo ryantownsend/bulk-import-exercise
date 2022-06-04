@@ -1,5 +1,7 @@
 [![Ruby on Rails CI](https://github.com/ryantownsend/bulk-import-exercise/actions/workflows/rubyonrails.yml/badge.svg)](https://github.com/ryantownsend/bulk-import-exercise/actions/workflows/rubyonrails.yml)
 
+**Note: You can now find the workshop video and write-up here: https://www.twnsnd.com/posts/how_i_100xd_bulk_import_speed_in_rails_with_some_gnarly_sql.html**
+
 # Bulk Import Exercise
 
 This repository serves as a starting point for an exercise in optimising bulk/batch imports.
@@ -49,7 +51,7 @@ classDiagram
   class movie_imports{
     +uuid id
     +jsonb entries
-    +text[] errors
+    +text[] entry_errors
     +datetime created_at
     +datetime updated_at
     +datetime started_at
